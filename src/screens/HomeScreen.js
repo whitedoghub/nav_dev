@@ -20,6 +20,10 @@ const HomeScreen = ({ navigation, route }) => {
         onPress={() => navigation.navigate('CreatePost')}
       />
       <Text style={{ margin: 10 }}>Post : {route.params?.post}</Text>
+      <Button
+        title="Update title"
+        onPress={() => navigation.setOptions({ title: 'changedTitle' })}
+      />
     </View>
   );
 };
