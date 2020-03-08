@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './src/screens/HomeScreen';
 import Details from './src/screens/DetailsScreen';
+import CreatePost from './src/screens/CreatePostScreen';
 
 const Stack = createStackNavigator();
 
@@ -16,9 +17,9 @@ const App = () => {
           name="Home"
           component={Home}
           options={{ title: 'Overview' }}
-          initialParams={{ itemId: 42 }}
         />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="CreatePost" component={CreatePost} />
       </Stack.Navigator>
     </NavigationContainer>
   );
