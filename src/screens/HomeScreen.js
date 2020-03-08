@@ -13,7 +13,7 @@ const HomeScreen = ({ navigation, route }) => {
       <Text>HomeScreen</Text>
       <Button
         title="Go To Details"
-        onPress={() => navigation.navigate('Details', { itemId: 109 })}
+        onPress={() => navigation.push('Details', { itemId: 109 })}
       />
       <Button
         title="Create Post"

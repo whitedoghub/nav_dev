@@ -14,6 +14,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
+        initialRouteName={'Home'}
+        mode={'card'}
         screenOptions={{
           headerStyle: {
             backgroundColor: '#f45112',
